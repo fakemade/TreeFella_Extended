@@ -14,7 +14,7 @@ public class PlacedBlocks {
     private static FileConfiguration customFile;
 
     public static void setup() {
-        file = new File(Bukkit.getServer().getPluginManager().getPlugin("TreeFella").getDataFolder(), "PlacedBlocks.yml");
+        file = new File(Bukkit.getServer().getPluginManager().getPlugin("TreeFella_Extended").getDataFolder(), "PlacedBlocks.yml");
 
         if (!file.exists()) {
             try {

@@ -44,8 +44,12 @@ public final class TreeFella extends JavaPlugin {
             Material.ANCIENT_DEBRIS
     );
 
+    // Статическое поле для хранения экземпляра плагина
+    private static TreeFella instance;
+
     @Override
     public void onEnable() {
+        instance = this;
         // Plugin startup logic
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
@@ -56,5 +60,19 @@ public final class TreeFella extends JavaPlugin {
 
         this.getServer().getPluginManager().registerEvents(new BlockPlaceEvent(), this);
         this.getServer().getPluginManager().registerEvents(new BlockBreakEvent(), this);
+        getLogger().info("TreeFella_Extended включен!");
+    }
+
+
+
+    @Override
+    public void onDisable() {
+        // Логирование при отключении плагина
+        getLogger().info("TreeFella выключен!");
+    }
+
+    // Метод для получения экземпляра плагина
+    public static TreeFella getInstance() {
+        return instance;
     }
 }
