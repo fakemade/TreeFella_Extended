@@ -4,7 +4,8 @@
 This repository is a fork of the original <a href="https://github.com/Vittorassi/TreeFella">plugin</a> by <a href="https://github.com/Vittorassi/">Vittorassi</a>.
 
 A simple plugin for quickly chopping down trees and ore mining!
-
+<a href="https://hangar.papermc.io/V1ttorassi/TreeFella">TreeFella</a> orbginal Hangar page
+<a href="https://hangar.papermc.io/fakemade/TreeFella_Extended">TreeFella_Extended</a> Hangar page
 ## Differences from the original plugin
 
 1. Update to 1.21.11 core for Paper
