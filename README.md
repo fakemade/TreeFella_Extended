@@ -1,4 +1,4 @@
-![Uploading ChatGPT Image 29 янв. 2026 г., 15_22_57.png…]()
+<img width="1536" height="1024" alt="MainImage" src="https://github.com/user-attachments/assets/2ac96d37-24e1-4e31-bf49-a75b4c373101" />
 
 # TreeFella_Extended
 This repository is a fork of the original <a href="https://github.com/Vittorassi/TreeFella">plugin</a> by <a href="https://github.com/Vittorassi/">Vittorassi</a>.
