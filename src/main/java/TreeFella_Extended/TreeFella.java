@@ -1,9 +1,9 @@
-package me.otavio.treefella;
+package TreeFella_Extended;
 
 import com.google.common.collect.ImmutableList;
-import me.otavio.treefella.files.PlacedBlocks;
-import me.otavio.treefella.listeners.BlockBreakEvent;
-import me.otavio.treefella.listeners.BlockPlaceEvent;
+import TreeFella_Extended.files.PlacedBlocks;
+import TreeFella_Extended.listeners.BlockBreakEvent;
+import TreeFella_Extended.listeners.BlockPlaceEvent;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 

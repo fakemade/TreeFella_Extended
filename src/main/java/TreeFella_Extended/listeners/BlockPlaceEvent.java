@@ -1,7 +1,7 @@
-package me.otavio.treefella.listeners;
+package TreeFella_Extended.listeners;
 
-import me.otavio.treefella.TreeFella;
-import me.otavio.treefella.files.PlacedBlocks;
+import TreeFella_Extended.TreeFella;
+import TreeFella_Extended.files.PlacedBlocks;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

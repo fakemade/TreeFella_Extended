@@ -1,4 +1,4 @@
 name: TreeFella_Extended
 version: '${project.version}'
-main: me.otavio.treefella.TreeFella
+main: TreeFella_Extended.TreeFella
 api-version: '1.21.11'

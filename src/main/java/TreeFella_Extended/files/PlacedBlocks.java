@@ -1,4 +1,4 @@
-package me.otavio.treefella.files;
+package TreeFella_Extended.files;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
