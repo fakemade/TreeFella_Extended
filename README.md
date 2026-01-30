@@ -12,9 +12,9 @@ A simple plugin for quickly chopping down trees and ore mining!
 3. Rewrite felling/mining algorithm
    3\.1. Now the items are cut down one by one with a very small delay to add a bit of verisimilitude.
    3\.2. The algorithm for getting dropped blocks has been changed. Now there are several schemes:
-   - If there is enough strength of the tool and space in the inventory -> the blocks break, the drop is placed in the inventory.
-   - If the tool has enough durability but the inventory is full -> the blocks will break. The system then checks for available space. If there is none, all loot drops at the block's location. If there is some space, part of the loot is added to the inventory, and the remainder is dropped on the ground.
-   - If the tool’s durability is insufficient to break all blocks -> only the amount corresponding to the remaining durability will be destroyed. Regarding inventory storage, the conditions mentioned above apply. Any remaining blocks that exceeded the tool's durability stay intact.
+   - If there is enough strength of the tool and space in the inventory → the blocks break, the drop is placed in the inventory.
+   - If the tool has enough durability but the inventory is full → the blocks will break. The system then checks for available space. If there is none, all loot drops at the block's location. If there is some space, part of the loot is added to the inventory, and the remainder is dropped on the ground.
+   - If the tool’s durability is insufficient to break all blocks → only the amount corresponding to the remaining durability will be destroyed. Regarding inventory storage, the conditions mentioned above apply. Any remaining blocks that exceeded the tool's durability stay intact.
    3\.3. Now, if the ore is nearby but in different types of blocks (deepslate and stone), they will break together, since the type of ore is the same.
 4. There is a destruction effect for each broken block, previously the effect was only for the first one.
 5. Now the plugin always works without additional actions (no need to squat for the plugin to work)
