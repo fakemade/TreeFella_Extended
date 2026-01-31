@@ -57,7 +57,7 @@ public final class TreeFella extends JavaPlugin implements EventRegistrar {
             Material.ANCIENT_DEBRIS
     );
 
-    private Map<String, String> emote_ids_list = Map.of("waving","4c8ae710-df2e-47cd-814d-cc7bf21a3d67",
+    private final Map<String, String> emote_ids_list = Map.of("waving","4c8ae710-df2e-47cd-814d-cc7bf21a3d67",
             "asking everyone to follow","17428c4c-3813-4ea1-b3a9-d6a32f83afca",
             "pointing overthere","ce5c0300-7f03-455d-aaf1-352e4927b54d",
             "clapping", "9a469a61-c83b-4ba9-b507-bdbe64430582");
@@ -182,7 +182,7 @@ public final class TreeFella extends JavaPlugin implements EventRegistrar {
     public void onClientEmoteEvent(ClientEmoteEvent event){
         String emote_id = event.emoteId();
 
-        if (emote_id.equalsIgnoreCase(this.toggle_emote)){
+        if (emote_id.equalsIgnoreCase(this.emote_ids_list.get(this.toggle_emote))){
             Player p = Bukkit.getPlayer(Objects.requireNonNull(event.connection().playerUuid()));
             if(p==null) {
                 getLogger().info("Player does not exist");
@@ -197,7 +197,7 @@ public final class TreeFella extends JavaPlugin implements EventRegistrar {
                 { Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tfetoggle on");});
             }
         }
-        else if (emote_id.equalsIgnoreCase(this.sneaking_emote)){
+        else if (emote_id.equalsIgnoreCase(this.emote_ids_list.get(this.sneaking_emote))){
             Player p = Bukkit.getPlayer(Objects.requireNonNull(event.connection().playerUuid()));
             if(p==null) {
                 getLogger().info("Player does not exist");
