@@ -6,7 +6,7 @@
 
     <groupId>fakemade</groupId>
     <artifactId>TreeFella_Extended</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>TreeFella_Extended</name>
@@ -61,6 +61,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>opencollab-snapshot</id>
+            <url>https://repo.opencollab.dev/main/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -68,6 +72,12 @@
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
             <version>1.21.11-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.geysermc.geyser</groupId>
+            <artifactId>api</artifactId>
+            <version>2.9.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

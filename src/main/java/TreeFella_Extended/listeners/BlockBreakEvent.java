@@ -1,5 +1,6 @@
 package TreeFella_Extended.listeners;
 
+import TreeFella_Extended.utils.PluginState;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import TreeFella_Extended.TreeFella;
@@ -71,9 +72,18 @@ public class BlockBreakEvent implements Listener {
             .put(Material.ANCIENT_DEBRIS, "ANCIENT_DEBRIS")
             .build();
 
+    private PluginState _state;
+
+    public BlockBreakEvent(PluginState state) {
+        _state = state;
+    }
+
     @EventHandler
     public void onBlockBreakEvent(org.bukkit.event.block.BlockBreakEvent e) {
+        if (!_state.isEnabled()) return;
         Player p = e.getPlayer();
+        if(_state.isSneaking() && !p.isSneaking()) return;
+
         ItemStack itemInHand = p.getInventory().getItemInMainHand();
         Block b = e.getBlock();
 
