@@ -190,11 +190,11 @@ public final class TreeFella extends JavaPlugin implements EventRegistrar {
             }
             if (state.isEnabled()){
                 Bukkit.getScheduler().runTask(this,() ->
-                {Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tfetoggle off");});
+                {Bukkit.dispatchCommand(p, "tfetoggle off");});
             }
             else{
                 Bukkit.getScheduler().runTask(this,() ->
-                { Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tfetoggle on");});
+                { Bukkit.dispatchCommand(p, "tfetoggle on");});
             }
         }
         else if (emote_id.equalsIgnoreCase(this.emote_ids_list.get(this.sneaking_emote))){
@@ -205,11 +205,11 @@ public final class TreeFella extends JavaPlugin implements EventRegistrar {
             }
             if (state.isSneaking()){
                 Bukkit.getScheduler().runTask(this,() ->
-                {Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tfesneaking off");});
+                {Bukkit.dispatchCommand(p, "tfesneaking off");});
             }
             else{
                 Bukkit.getScheduler().runTask(this,() ->
-                { Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "tfesneaking on");});
+                { Bukkit.dispatchCommand(p, "tfesneaking on");});
             }
         }
     }
