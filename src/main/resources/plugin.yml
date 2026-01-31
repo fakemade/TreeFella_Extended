@@ -2,3 +2,12 @@ name: TreeFella_Extended
 version: '${project.version}'
 main: TreeFella_Extended.TreeFella
 api-version: '1.21.11'
+softdepend:
+  - Geyser-Spigot
+commands:
+  tfetoggle:
+    description: On/off switching plugin command
+    usage: /tfetoggle <on|off>
+  tfesneaking:
+    description: On/off switching requiring sneaking command
+    usage: /tfesneaking <on|off>
