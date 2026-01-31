@@ -50,3 +50,8 @@ need_sneaking: false
 emote_toggle: "waving"
 emote_sneaking: "asking everyone to follow"
 ```
+
+***It does not work with emotes added through 'Emotecraft' and other plugins for Java players.***
+
+## Additional information
+If you would like to see any features added or the ability to integrate with plugins like *'Emotecraft'*, you can create an issue on GitHub.
