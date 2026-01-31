@@ -20,19 +20,33 @@ A simple plugin for quickly chopping down trees and ore mining!
    - If the tool’s durability is insufficient to break all blocks → only the amount corresponding to the remaining durability will be destroyed. Regarding inventory storage, the conditions mentioned above apply. Any remaining blocks that exceeded the tool's durability stay intact.
    3\.3. Now, if the ore is nearby but in different types of blocks (deepslate and stone), they will break together, since the type of ore is the same.
 4. There is a destruction effect for each broken block, previously the effect was only for the first one.
-5. Now the plugin always works without additional actions (no need to squat for the plugin to work)
-
+5. New commands and opportunity using emotes for Bedrock players
 
 # How to install
 - Download  ".jar" the file  and  place it in the plugins  folder
 - Start/restart your server
 
 
-## Instructions
-Just  break the desired  ore  /  wood, the rest of the blocks of the  same  type  nearby  will be broken  and  placed  in the inventory  /  thrown to the  ground  according to the rules  described  above.
+## How to use it
+Now plugin has 2 commands for enabling and disabling plugin and sneaking requirement.
+- ***/tfetoggle on*** - enable plugin. If it's enabled it sends message in chat 
+- ***/tfetoggle off*** - disable plugin. If it's enabled it sends message in chat 
+- ***/tfesneaking on*** - enable requirement sneaking. If it's enabled it sends message in chat
+- ***/tfesneaking off*** - disable requirement sneaking. If it's enabled it sends message in chat
+You can define sneaking requirement in **config.yml**.
+### Info for Bedrock players
+For bedrock players who play in Java servers through Geyser you can use emotes for two command above.
+You can define this emotes in **config.yml**. Now available 4 type of emotes(because its free ond common):
+1. *"waving"*
+2. *"asking everyone to follow"*
+3. *"pointing overthere"*
+4. *"clapping"*
 
-### Wood
-Wood chopping requires an axe to work and can chop any type of wood or nether planks
+If emote is used it triggers above commands.
 
-### Ores
-Ore mining requires a pickaxe to work and can mine any type of ore including deepslate variants with stone together and nether ores
+Example of default **config.yml**:
+```yaml
+need_sneaking: false
+emote_toggle: "waving"
+emote_sneaking: "asking everyone to follow"
+```
