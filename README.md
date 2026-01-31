@@ -1,10 +1,13 @@
-![Uploading ChatGPT Image 29 янв. 2026 г., 15_22_57.png…]()
+<img width="1536" height="1024" alt="MainImage" src="https://github.com/user-attachments/assets/2ac96d37-24e1-4e31-bf49-a75b4c373101" />
 
 # TreeFella_Extended
 This repository is a fork of the original <a href="https://github.com/Vittorassi/TreeFella">plugin</a> by <a href="https://github.com/Vittorassi/">Vittorassi</a>.
 
 A simple plugin for quickly chopping down trees and ore mining!
 
+<a href="https://hangar.papermc.io/V1ttorassi/TreeFella">TreeFella</a> original Hangar page
+
+<a href="https://hangar.papermc.io/fakemade/TreeFella_Extended">TreeFella_Extended</a> Hangar page
 ## Differences from the original plugin
 
 1. Update to 1.21.11 core for Paper
